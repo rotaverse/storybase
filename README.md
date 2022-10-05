@@ -1,21 +1,9 @@
-# Gatsby Lander
 
-This is an experimental starter built using [gatsby-theme-codebushi](https://github.com/codebushi/gatsby-theme-codebushi), a theme which uses [Tailwind CSS](https://tailwindcss.com/).
-
-Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
-
-## Preview
-
-https://gatsby-lander.surge.sh/
+This is an experimental application starter built using gatsby-tailwinf-dfinity for own learning.
 
 ## Installation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-lander https://github.com/codebushi/gatsby-starter-lander`
-
 Run `gatsby develop` in the terminal to start the dev site.
-
 ## Notes
 
 These libraries do not yet fully support the upgrade to Gatsby 3.x:
