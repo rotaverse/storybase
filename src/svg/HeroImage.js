@@ -1,6 +1,10 @@
 import React from 'react';
 
 const HeroImage = () => (
+
+
+
+
   <svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
@@ -477,7 +481,7 @@ const HeroImage = () => (
       d="M224.23 553.03a2.3 2.3 0 011.94.47 5.2 5.2 0 011.26 2.17 20.8 20.8 0 004.47 6.82M222.26 555.47a2.74 2.74 0 012.59.85 7.9 7.9 0 011.1 2.19 13.06 13.06 0 003.39 4.36"
       opacity=".1"
     />
-  </svg>
+  </svg> 
 );
 
 export default HeroImage;

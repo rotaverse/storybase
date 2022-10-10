@@ -7,11 +7,13 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
-import HeroImage from '../svg/HeroImage';
+//import HeroImage from '../svg/HeroImage';
 //import Pricing from '../components/Pricing'
 import SvgCharts from '../svg/SvgCharts';
 import Support from '../components/Support';
 import { MemberPage } from './memberPage';
+import HeroImage from '../svg/HeroImage';
+import pic from "../svg/office.jpg";
 
 const Index = () => (
   <Layout>
@@ -22,8 +24,8 @@ const Index = () => (
             Tell the Story
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Free landing page template to promote your business startup and generate leads for the
-            offered services
+            This is learning page to learn ourselves: React+Gatsby+Tailwind+Typescript
+            So far is messy, but maybe in the future ...
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Get Started</Button>
@@ -31,7 +33,7 @@ const Index = () => (
           <p className="mt-4 text-gray-600">Sed fermentum felis ut cursu</p>
         </div>
         <div className="lg:w-1/2">
-          <HeroImage />
+         <img src={pic} />
         </div>
       </div>
     </section>
@@ -116,7 +118,8 @@ const Index = () => (
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src='../assets/skyline.jpg' alt="Girl in a jacket"/> 
+    }
     />
     <section id="stats" className="py-20 lg:pt-32">
       <div className="container mx-auto text-center">

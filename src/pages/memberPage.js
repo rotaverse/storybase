@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react'
 import { LoginForm } from '../components/LoginForm'
 import { RegisterForm } from '../components/RegisterForm'
+import pic from "../svg/office2.jpg";
 const styles = {
   label: 'block text-gray-700 text-sm font-bold pt-2 pb-1',
   field:
@@ -19,10 +20,10 @@ export const MemberPage = ({ brand, logoUrl }) => {
           <div
             className='hidden lg:block lg:w-1/2 bg-auto bg-no-repeat	'
             style={{ backgroundImage: `url(${logoUrl})` }}
-          ></div>
+          ><img src={pic} /></div>
           <div className='w-full p-8 lg:w-1/2'>
             <h2 className='text-2xl font-semibold text-gray-600 text-center'>
-              {brand}
+            {brand}
             </h2>
             <a
               onClick={() => {
