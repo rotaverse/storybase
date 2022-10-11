@@ -11,7 +11,7 @@ const styles = {
     ' bg-gray-700 text-white font-bold py-2 px-4 w-full rounded hover:bg-gray-600',
   errorMsg: 'text-red-500 text-sm',
 }
-export const MemberPage = ({ brand, logoUrl }) => {
+export const MemberPage = () => {
   const [isLogin, setIsLogin] = useState('Login')
   return (
     <div className='flex flex-row w-full'>
@@ -19,12 +19,12 @@ export const MemberPage = ({ brand, logoUrl }) => {
         <div className='flex bg-white rounded-lg shadow-2xl overflow-hidden mx-auto max-w-sm lg:max-w-4xl'>
           <div
             className='hidden lg:block lg:w-1/2 bg-auto bg-no-repeat	'
-            style={{ backgroundImage: `url(${logoUrl})` }}
+            
           ><img src={pic} /></div>
           <div className='w-full p-8 lg:w-1/2'>
-            <h2 className='text-2xl font-semibold text-gray-600 text-center'>
+            {/*<h2 className='text-2xl font-semibold text-gray-600 text-center'>
             {brand}
-            </h2>
+            </h2>*/}
             <a
               onClick={() => {
                 setIsLogin(!isLogin)
@@ -46,9 +46,9 @@ export const MemberPage = ({ brand, logoUrl }) => {
               <span className='border-b w-1/5 border-red-700 lg:w-1/4'></span>
             </div>
             {isLogin ? (
-              <LoginForm styles={styles} />
+              <LoginForm />
             ) : (
-              <RegisterForm styles={styles} />
+              <RegisterForm />
             )}
           </div>
         </div>

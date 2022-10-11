@@ -12,8 +12,8 @@ import customerData from '../data/customer-data';
 import SvgCharts from '../svg/SvgCharts';
 import Support from '../components/Support';
 import { MemberPage } from './memberPage';
-import HeroImage from '../svg/HeroImage';
 import pic from "../svg/office.jpg";
+import pic2 from "../svg/office2.jpg";
 
 const Index = () => (
   <Layout>
@@ -43,7 +43,7 @@ const Index = () => (
         <MemberPage />
       </div>
     </section> 
-    <Support /> 
+    {/* <Support /> */}
     <section id="maintenance" className="py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">Maintenance</h2>
@@ -89,7 +89,7 @@ const Index = () => (
           </p>
         </div>
       }
-      secondarySlot={<SvgCharts />}
+      secondarySlot={<img src={pic2} />}
     />
     <SplitSection
       reverseOrder
