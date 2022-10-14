@@ -1,6 +1,12 @@
+import { useSelector } from "react-redux"
+import { useDispatch } from "react-redux";
+import { bindActionCreators } from 'redux'
+import { actionCreators } from "./state/index"
+
 import React from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import { loginSchema } from './validation/loginSchema'
+import { saveLogin } from "../state/action-creator";
 const styles = {
   label: 'block text-gray-700 text-sm font-bold pt-2 pb-1',
   field:
@@ -20,6 +26,9 @@ export const LoginForm = () => (
       validationSchema={loginSchema}
       onSubmit={(values) => {
         alert(JSON.stringify(values, null, 2))
+        var templog = JSON.stringify(values, null, 2)
+        saveLogin( templog); {/* TODO call BlockchainComm( templog) - call API */}
+        {/* <button onClick={() => depositMoney(1000)}>Deposit</button> */}
         console.log("value", values.email, values.password)
       }}
     >
